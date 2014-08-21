@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+    
+
+    
+  
+
+<TextView
+    android:id="@+id/userName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="38dp"
+    android:text="用户名" />
+
+<EditText
+    android:id="@+id/userNameText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/userName"
+    android:layout_toRightOf="@+id/userName"
+    android:ems="10"
+    android:inputType="textPersonName" />
+
+<TextView
+    android:id="@+id/password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/userName"
+    android:layout_below="@+id/userName"
+    android:layout_marginTop="45dp"
+    android:text="密  码" />
+
+<EditText
+    android:id="@+id/passwordText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/login"
+    android:layout_alignLeft="@+id/userNameText"
+    android:ems="10"
+    android:inputType="textPassword" >
+
+    <requestFocus />
+</EditText>
+
+<Button
+    android:id="@+id/login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/password"
+    android:layout_alignRight="@+id/userNameText"
+    android:layout_below="@+id/password"
+    android:layout_marginTop="39dp"
+    android:text="登陆" />
+
+
+
+</RelativeLayout>
